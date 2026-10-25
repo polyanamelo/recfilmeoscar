@@ -1,0 +1,54 @@
+
+.card-film {
+  background-color: #fffdf8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-film:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card-film img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  background-color: #343b46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-info h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #26364a;
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #777064;
+}
+
+/* Altura padrão para os indicados */
+
+.card-film.nominee .card-image,
+.card-film.nominee img {
+  height: 200px;
+}
